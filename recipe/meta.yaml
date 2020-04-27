@@ -14,22 +14,23 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - flask
+    - brotlipy
 
 test:
   imports:
     - flask_compress
 
 about:
-  home: https://libwilliam.github.io/flask-compress/
+  home: https://github.com/colour-science/flask-compress
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
@@ -37,7 +38,7 @@ about:
 
   description: |
     Flask-Compress allows you to easily compress your Flask application's responses with gzip.
-  dev_url: https://github.com/libwilliam/flask-compress
+  dev_url: https://github.com/colour-science/flask-compress
 
 extra:
   recipe-maintainers:
