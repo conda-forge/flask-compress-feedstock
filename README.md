@@ -1,7 +1,7 @@
 About flask-compress
 ====================
 
-Home: https://libwilliam.github.io/flask-compress/
+Home: https://github.com/colour-science/flask-compress
 
 Package license: MIT
 
