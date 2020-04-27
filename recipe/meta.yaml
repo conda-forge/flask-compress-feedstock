@@ -1,6 +1,6 @@
 {% set name = "Flask-Compress" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "468693f4ddd11ac6a41bca4eb5f94b071b763256d54136f77957cfee635badb3" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "f367b2b46003dd62be34f7fb1379938032656dca56377a9bc90e7188e4289a7c" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Compress responses in your Flask app with gzip.'
+  summary: Compress responses in your Flask app with gzip.
 
   description: |
     Flask-Compress allows you to easily compress your Flask application's responses with gzip.
