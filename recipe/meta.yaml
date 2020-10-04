@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -23,11 +23,15 @@ requirements:
   run:
     - python
     - flask
-    - brotlipy
+    - brotli-python
 
 test:
   imports:
     - flask_compress
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/colour-science/flask-compress
@@ -43,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - synapticarbors
+    - mariusvniekerk
