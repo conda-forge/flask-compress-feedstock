@@ -26,12 +26,16 @@ requirements:
     - brotli-python
 
 test:
+  source_files:
+    - tests
   imports:
     - flask_compress
   commands:
     - pip check
+    - pytest tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/colour-science/flask-compress
