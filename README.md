@@ -5,7 +5,7 @@ Home: https://github.com/colour-science/flask-compress
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Compress responses in your Flask app with gzip.
 
@@ -117,5 +117,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@synapticarbors](https://github.com/synapticarbors/)
 
