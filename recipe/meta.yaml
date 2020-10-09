@@ -1,6 +1,6 @@
 {% set name = "Flask-Compress" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "2d551211eca86e684c170491c857692b6c4c94a147ab6b41995decac8ee63567" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "965e832684160871b5268f97879c5e85a88569cc6e3e353a7779215664eefdad" %}
 
 package:
   name: {{ name|lower }}
