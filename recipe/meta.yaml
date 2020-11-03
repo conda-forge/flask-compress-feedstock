@@ -1,6 +1,6 @@
 {% set name = "Flask-Compress" %}
-{% set version = "1.7.0" %}
-{% set sha256 = "965e832684160871b5268f97879c5e85a88569cc6e3e353a7779215664eefdad" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "c132590e7c948877a96d675c13cbfa64edec0faafa2381678dea6f36aa49a552" %}
 
 package:
   name: {{ name|lower }}
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - flask
     - brotli-python
 
