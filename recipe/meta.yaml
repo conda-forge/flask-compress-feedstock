@@ -1,29 +1,27 @@
-{% set name = "Flask-Compress" %}
 {% set version = "1.12" %}
-{% set sha256 = "e2159499f39d618a4d56ba0484e7b58b57956b9a2c6d3510f095f5bb14b7afc5" %}
 
 package:
-  name: {{ name|lower }}
+  name: flask-compress
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/F/Flask-Compress/Flask-Compress-{{ version }}.tar.gz
+  sha256: e2159499f39d618a4d56ba0484e7b58b57956b9a2c6d3510f095f5bb14b7afc5
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python =2.7|>=3.6
     - pip
+    - python =2.7|>=3.6
+    - setuptools-scm
   run:
-    - python >=2.7|>=3.6
-    - flask
     - brotli-python
+    - flask
+    - python >=2.7|>=3.6
 
 test:
   source_files:
@@ -31,9 +29,12 @@ test:
   imports:
     - flask_compress
   commands:
+    - pip list
+    - pip list | grep "Flask-Compress\s*{{ version.replace(".", "\.") }}"
     - pip check
-    - pytest tests
+    - pytest -vv tests
   requires:
+    - m2-grep  # [win]
     - pip
     - pytest
 
@@ -43,7 +44,6 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: Compress responses in your Flask app with gzip.
-
   description: |
     Flask-Compress allows you to easily compress your Flask application's responses with gzip.
   dev_url: https://github.com/colour-science/flask-compress
