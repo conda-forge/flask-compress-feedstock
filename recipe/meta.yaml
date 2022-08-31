@@ -13,13 +13,14 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python =2.7|>=3.6
     - pip
+    - setuptools_scm >=3.4
   run:
     - python >=2.7|>=3.6
     - flask
