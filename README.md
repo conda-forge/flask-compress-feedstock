@@ -1,11 +1,11 @@
-About flask-compress
-====================
+About flask-compress-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-compress-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/colour-science/flask-compress
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-compress-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compress responses in your Flask app with gzip.
 
