@@ -1,4 +1,4 @@
-{% set version = "1.13" %}
+{% set version = "1.14" %}
 
 package:
   name: flask-compress
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/F/Flask-Compress/Flask-Compress-{{ version }}.tar.gz
-  sha256: ee96f18bf9b00f2deb4e3406ca4a05093aa80e2ef0578525a3b4d32ecdff129d
+  sha256: e46528f37b91857012be38e24e65db1a248662c3dc32ee7808b5986bf1d123ee
 
 build:
   noarch: python
