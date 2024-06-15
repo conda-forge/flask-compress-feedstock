@@ -21,6 +21,7 @@ requirements:
   run:
     - brotli-python
     - flask
+    - zstandard
     - python >=2.7|>=3.6
 
 test:
