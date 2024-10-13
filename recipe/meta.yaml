@@ -39,6 +39,7 @@ test:
     - m2-grep  # [win]
     - pip
     - pytest
+    - flask-caching
 
 about:
   home: https://github.com/colour-science/flask-compress
