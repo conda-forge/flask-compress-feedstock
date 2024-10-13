@@ -16,13 +16,14 @@ build:
 requirements:
   host:
     - pip
-    - python =2.7|>=3.6
-    - setuptools-scm
+    - python >=3.9
+    - setuptools-scm <8
+    - setuptools >=42
   run:
     - brotli-python
     - flask
     - zstandard
-    - python >=2.7|>=3.6
+    - python >=3.9
 
 test:
   source_files:
