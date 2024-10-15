@@ -20,8 +20,6 @@ requirements:
     - setuptools-scm <8
     - setuptools >=42
   run:
-    - brotli
-    - brotlicffi
     - brotli-python
     - flask
     - zstandard
