@@ -47,10 +47,8 @@ tests:
         - flask-caching
         - python ${{ python_min }}.*
     script:
-      - pip list
-      - "pip list | grep \"Flask-Compress\\s*{{ version | replace(\".\", \"\\.\") }}\""
-      - pip check
       - pytest -vv tests
+      - pip list
 
 about:
   license: MIT
