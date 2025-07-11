@@ -13,7 +13,6 @@ Development: https://github.com/colour-science/flask-compress
 
 Flask-Compress allows you to easily compress your Flask application's responses with gzip.
 
-
 Current build status
 ====================
 
