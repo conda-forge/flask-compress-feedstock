@@ -1,4 +1,4 @@
-{% set version = "1.17" %}
+{% set version = "1.18" %}
 
 package:
   name: flask-compress
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/F/Flask-Compress/flask_compress-{{ version }}.tar.gz
-  sha256: 1ebb112b129ea7c9e7d6ee6d5cc0d64f226cbc50c4daddf1a58b9bd02253fbd8
+  sha256: fdbae1bd8e334dfdc8b19549829163987c796fafea7fa1c63f9a4add23c8413a
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,6 +20,9 @@ requirements:
     - setuptools-scm <8
     - setuptools >=42
   run:
+    - brotli
+    - brotlicffi
+    - pyzstd
     - brotli-python
     - flask
     - zstandard
