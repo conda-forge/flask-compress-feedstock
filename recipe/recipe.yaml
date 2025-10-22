@@ -25,8 +25,7 @@ requirements:
   run:
     - brotli-python
     - flask
-    - pyzstd
-    - zstandard
+    - backports.zstd
     - python >=${{ python_min }}
 
 tests:
