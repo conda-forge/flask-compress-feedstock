@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.21"
+  version: "1.22"
   python_check_max: "3.14"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/F/Flask-Compress/flask_compress-${{ version }}.tar.gz
-  sha256: 79d8a9c06fa0965f796aa56b8dbfd8c7e85971b88cd38b879aa2aa6a6da4474c
+  sha256: d980253932a8b80a2d04b79588dd371375b8d3a4775a689488ccf1480c250bd7
 
 build:
   number: 0
