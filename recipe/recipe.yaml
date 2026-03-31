@@ -1,8 +1,8 @@
 schema_version: 1
 
 context:
-  version: "1.23"
-  python_check_max: "3.14"
+  version: '1.24'
+  python_check_max: '3.14'
 
 package:
   name: flask-compress
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/F/Flask-Compress/flask_compress-${{ version }}.tar.gz
-  sha256: 5580935b422e3f136b9a90909e4b1015ac2b29c9aebe0f8733b790fde461c545
+  sha256: 14097cefe59ecb3e466d52a6aeb62f34f125a9f7dadf1f33a53e430ce4a50f31
 
 build:
   number: 0
@@ -28,7 +28,6 @@ requirements:
     - flask
     - backports.zstd
     - python >=${{ python_min }}
-
 tests:
   - python:
       imports:
