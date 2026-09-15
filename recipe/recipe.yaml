@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: '1.24'
+  version: '1.25'
   python_check_max: '3.14'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/F/Flask-Compress/flask_compress-${{ version }}.tar.gz
-  sha256: 14097cefe59ecb3e466d52a6aeb62f34f125a9f7dadf1f33a53e430ce4a50f31
+  sha256: 802954fb3af048cf4ca2a3b414393bf2b98466ae8067e6654ea0aa34ba34aff5
 
 build:
   number: 0
@@ -24,10 +24,11 @@ requirements:
     - setuptools-scm <8
     - setuptools >=42
   run:
-    - brotli-python
     - flask
     - backports.zstd
     - python >=${{ python_min }}
+    - brotli
+    - brotlicffi
 tests:
   - python:
       imports:
