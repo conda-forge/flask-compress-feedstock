@@ -2,7 +2,6 @@ schema_version: 1
 
 context:
   version: '1.25'
-  python_check_max: '3.14'
 
 package:
   name: flask-compress
@@ -24,11 +23,10 @@ requirements:
     - setuptools-scm <8
     - setuptools >=42
   run:
+    - brotli-python
     - flask
     - backports.zstd
     - python >=${{ python_min }}
-    - brotli
-    - brotlicffi
 tests:
   - python:
       imports:
@@ -36,7 +34,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - ${{ python_check_max }}.*
+        - '*'
   - files:
       source:
         - tests
