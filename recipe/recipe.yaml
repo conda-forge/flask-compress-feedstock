@@ -26,8 +26,7 @@ requirements:
     - flask
     - backports.zstd
     - python >=${{ python_min }}
-    - brotlicffi
-    - brotli
+    - brotli-python
 tests:
   - python:
       imports:
